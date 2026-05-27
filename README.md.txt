@@ -27,6 +27,6 @@ Project Progress
 
 [x] Stage 3
 
-[ ] Stage 4
+[x] Stage 4
 
 [ ] Stage 5
