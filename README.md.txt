@@ -2,23 +2,21 @@ Coffee Machine ☕
 A project completed as part of the Java track on Hyperskill.
 The goal is to simulate the behavior of a simple coffee machine.
 
-Overview
-The program takes information about available resources (water, milk, coffee beans) and calculates how many cups of coffee can be made.
-The project is currently at Stage 3.
+In Stage 5, the coffee machine is upgraded into a state‑driven interactive program.
+Instead of processing all input at once, the machine now reacts based on its current state, such as:
 
-Features
-Calculation of the maximum number of possible coffee cups
+menu – waiting for a user command
 
-Checking whether the machine can produce the requested number of servings
+buy – selecting a coffee type
 
-Informative messages about missing resources
+fill – adding water, milk, beans, and cups step by step
 
-How to Run
-You can run the program using any Java environment (JDK 17+):
+take – withdrawing money
 
-Kod
-javac CoffeeMachine.java
-java CoffeeMachine
+remaining – showing machine resources
+
+The program runs in a loop until the user types exit.
+Stage 5 demonstrates handling multi‑step input, maintaining internal machine state, and implementing a simple finite‑state machine.
 
 Project Progress
 [x] Stage 1
@@ -29,4 +27,6 @@ Project Progress
 
 [x] Stage 4
 
-[ ] Stage 5
+[x] Stage 5
+
+[ ] Stage 6

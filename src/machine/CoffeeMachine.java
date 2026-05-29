@@ -16,56 +16,48 @@ public class CoffeeMachine {
     }
 
     static void runMenu() {
-        //while (true) {
-            //System.out.println("Write action: buy, fill, take, remaining, exit");
-            printState();
-            System.out.println("Write action (buy, fill, take)");
+        while (true) {
+            System.out.println("Write action (buy, fill, take, remaining, exit)");
             String action = scanner.nextLine();
 
             switch (action) {
                 case "buy":
                     buy();
                     break;
-                    //return;
                 case "fill":
                     fill();
                     break;
-                    //return;
                 case "take":
                     takeMoney();
                     break;
-                    //return;
                 case "remaining":
                     printState();
                     break;
-                    //return;
                 case "exit":
                     return;
             }
-            printState();
-        //}
+        }
     }
 
     static void buy() {
+
+        //while (true) {
         System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:");
         String action = scanner.nextLine();
-
         switch (action) {
             case "1":
                 makeEspresso();
                 break;
-                //return;
             case "2":
                 makeLatte();
                 break;
-                //return;
             case "3":
                 makeCappuccino();
                 break;
-                //return;
             case "back":
                 return;
         }
+        //}
     }
 
     static void fill() {
