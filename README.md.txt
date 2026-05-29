@@ -2,21 +2,20 @@ Coffee Machine ☕
 A project completed as part of the Java track on Hyperskill.
 The goal is to simulate the behavior of a simple coffee machine.
 
-In Stage 5, the coffee machine is upgraded into a state‑driven interactive program.
-Instead of processing all input at once, the machine now reacts based on its current state, such as:
+Stage 6 adds a cleaning system to the Coffee Machine.
+After producing 10 cups of coffee, the machine becomes locked and refuses to make more drinks until the user performs a cleaning action.
 
-menu – waiting for a user command
+New features introduced in this stage:
 
-buy – selecting a coffee type
+Cleaning requirement — after 10 coffees, the machine prints “I need cleaning!” and blocks the buy action.
 
-fill – adding water, milk, beans, and cups step by step
+Clean command — resets the internal counter and restores normal operation.
 
-take – withdrawing money
+Coffee counter — tracks how many coffees were made since the last cleaning.
 
-remaining – showing machine resources
+Fully functional menu with actions: buy, fill, take, clean, remaining, exit.
 
-The program runs in a loop until the user types exit.
-Stage 5 demonstrates handling multi‑step input, maintaining internal machine state, and implementing a simple finite‑state machine.
+This stage demonstrates state tracking, input handling, and enforcing machine maintenance rules.
 
 Project Progress
 [x] Stage 1
@@ -29,4 +28,4 @@ Project Progress
 
 [x] Stage 5
 
-[ ] Stage 6
+[x] Stage 6
